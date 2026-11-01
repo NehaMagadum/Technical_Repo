@@ -327,4 +327,65 @@ which node
 which code
 ```
 ### Basic of sed and awk
+**Sed** - sed is often used for text substitution and line operations.   
+Replace text.
+```
+sed 's/Linux/Ubuntu/' file_name
+```
+To replace the first ocurrence of Linux on each line.
+```
+sed 's/Linux/Ubuntu/g' file_name
+```
+To display line 2
+```
+sed -n '2p' file_name
+```
+To delete line 3
+```
+sed -n '3d' file_name
+```
+**Awk** - Useful for text fields, conditions and calculation (works with columns and conditions).   
+**Example**.   
+Create a file named marks.
+```
+printf "Asha 80 \nRavi 65 \nNeha 95 \n > mark.txt
+```
+Print names.
+```
+awk '{print $1}' marks.txt
+```
+Print marks.
+```
+awk '{print $2}' marks.txt
+```
+Print student scoring more that 70 marks.
+```
+awk '$2 >70 {print $1, $2}' marks.txt
+```
+### Terminal control keys
+Interrupt the foreground command.
+```
+Ctrl + C
+```
+Suspend the foreground job.
+```
+Ctrl + Z
+```
+Send EOF to the terminal input.
+```
+Ctrl + D
+```
+Reverse-search command history.
+```
+Ctrl + R
+```
+Clear the visible terminal screen.
+```
+Ctrl + L
+```
+Navigate command history
+```
+↑ / ↓
+```
+
 

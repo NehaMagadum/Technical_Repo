@@ -61,6 +61,10 @@ Here is the deep technical breakdown of the sub-systems and mechanisms that exec
                                                ├──> [Render Tree] ──> [Layout Engine] ──> [Paint] ──> [Compositing (GPU)]
 [CSS Files]     ──> [Tokens] ──> [CSSOM Tree] ─┘
 ```
+### References
+https://developer.chrome.com/docs/chromium/renderingng-architecture?utm_source=chatgpt.com   
+https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work?utm_source=chatgpt.com   
+https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Critical_rendering_path?utm_source=chatgpt.com
 
 
 

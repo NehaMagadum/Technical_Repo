@@ -66,3 +66,57 @@ The conversion of one data type into the other data type is known as type castin
 Two types :
 1. **Explicit Conversion :** The conversion of one data type to other is done by developers.
 2. **Implicit Conversion :** The conversion of one data type to other is automatically done by python.  
+## Conditional Statements
+A conditional statement executes a block of code based on whether a condition is true or false.  
+Examples: if, elif, else.
+### if 
+```
+if age >= 18:
+    print("Adult")
+```
+### elif
+```
+if age >= 18:
+    print("Adult")
+elif age >= 13:
+    print("Teenager")
+```
+### else
+```
+if age >= 18:
+    print("Adult")
+elif age >= 13:
+    print("Teenager")
+else:
+    print("Child")
+```
+## Loops
+A loop is used to execute a block of code repeatedly until a condition is satisfied or a sequence is completed.  
+Types:  
+• for loop.   
+• while loop. 
+### For Loop
+```
+for i in range(5):
+    print(i)
+```
+### Range
+```
+range(5)        # 0 to 4
+range(1, 6)     # 1 to 5
+range(1, 10, 2) # 1, 3, 5, 7, 9
+```
+### While Loop
+```
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+```
+### Loop Control
+```
+break       # Exit loop
+continue    # Skip current iteration
+pass        # Empty statement
+```
+

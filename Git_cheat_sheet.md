@@ -110,5 +110,29 @@ git reset HEAD~1
 git reset commit_hash
 git reset --hard commit_hash
 ```
+1. Committed the wrong message?
+```
+git commit --amend
+```
+2. Skipped file in the last commit ?
+```
+git commit —amend —no-edit
+```
+3. Accidentally committed on master?
+```
+git reset HEAD~ —hard
+```
+4. Accidentally committed to the wrong branch?
+```
+git reset HEAD~ —soft
+```
+5. Want to undo the last 5 commits?
+```
+git revert [Saved hash]
+```
+6. Want to undo changes to a file?
+```
+git checkout [saved hash] --file_path
+```
 ## Fork 
 A fork is a new repository that shares code and visibility settings with the original upstream repository (rough copy).

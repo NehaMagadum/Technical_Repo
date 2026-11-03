@@ -71,3 +71,62 @@ dict_items([('name':'Karan'), ('age':19), ('eligible':True)])
 ```
 
  ### Dictionary Methods
+
+ Dictionary uses several built-in methods for manipulation.  
+ 1. **update()** : Updates the value of the key provided to it if the item already exists in the dictionary, else it creates a new key-value pair.
+```
+info = {"name" : "Karan", "age" : 19, "eligible" : True}
+info.update({'age':20})
+info.update({'DOB':2003})
+print(info)
+```
+Output:
+```
+info = {"name" : "Karan", 'age':20, "eligible" : True, 'DOB':2003}
+```
+
+2. **clear()** : Removes all the items from the dictionary.
+```
+info = {"name" : "Karan", "age" : 19, "eligible" : True}
+info.clear()
+print(info)
+```
+Output:
+```
+{}
+```
+
+3. **pop()** : Removes the key-value pair whose key is passed as a parameter.
+```
+info = {"name" : "Karan", "age" : 19, "eligible" : True}
+info.pop('eligible')
+print(info)
+```
+Output:
+```
+{"name" : "Karan", "age" : 19}
+```
+
+4. **popitem()** : Removes the last key-value pair from the dictionary.
+```
+info = {"name" : "Karan", "eligible" : True, "age" : 19}
+info.popitem()
+print(info)
+```
+Output:
+```
+{"name" : "Karan", "eligible" : True}
+```
+
+5. **del** : Removes a dictionary item.
+```
+info = {"name" : "Karan", "eligible" : True, "age" : 19}
+del info['age']
+print(info)
+```
+Output:
+```
+info = {"name" : "Karan", "eligible" : True}
+```
+
+If the key is not provided del keyword will delete the entire dictionary. 

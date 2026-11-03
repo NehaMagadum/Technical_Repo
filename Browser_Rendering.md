@@ -55,16 +55,13 @@ Paint → Screen
 ## Mechanism Behind It 
 The core mechanism behind browser rendering relies on an asynchronous, multi-threaded pipeline designed to turn a stream of network bytes into a interactive 60Hz (or higher) visual interface.  
 
-Here is the deep technical breakdown of the sub-systems and mechanisms that execute this process.
+Here is the technical breakdown of the sub-systems and mechanisms that execute this process.
 ```
 [Network Bytes] ──> [Tokens] ──> [DOM Tree]   ─┐
                                                ├──> [Render Tree] ──> [Layout Engine] ──> [Paint] ──> [Compositing (GPU)]
 [CSS Files]     ──> [Tokens] ──> [CSSOM Tree] ─┘
 ```
 ### References
-https://developer.chrome.com/docs/chromium/renderingng-architecture?utm_source=chatgpt.com   
-https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work?utm_source=chatgpt.com   
-https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Critical_rendering_path?utm_source=chatgpt.com
-
-
+https://youtu.be/Tnp3yX9Z93Q?si=EieILsj0kBk57A2G  
+https://dev.to/starkiedev/how-the-browser-renders-a-web-page-1ahc
 
